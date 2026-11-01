@@ -1,0 +1,12 @@
+Script started on 2026-11-01 16:49:49-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="100" LINES="17"]
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ date
+[?2004lSun Nov  1 16:49:54 -03 2026
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ wha[Koami
+[?2004ljoao
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ pwd
+[?2004l/mnt/c/SO/Sync
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [?2004l
+exit
+
+Script done on 2026-11-01 17:08:12-03:00 [COMMAND_EXIT_CODE="130"]

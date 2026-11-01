@@ -15,3 +15,13 @@ typedef struct station {
     int vagas_livres;  
     int embarcando;
 }station;
+
+void station_init(station *s){
+    s->esperando =0;
+    s->vagas_livres=0;
+    s->embarcando=0;
+    
+    pthread_mutex_init(&s->mutex,NULL);
+    pthread_cond_init(&s->vagas_disponiveis,NULL);
+    pthread_cond_init(&s->embarque_concluido,NULL);
+}
