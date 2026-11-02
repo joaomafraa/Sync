@@ -25,3 +25,14 @@ void station_init(station *s){
     pthread_cond_init(&s->vagas_disponiveis,NULL);
     pthread_cond_init(&s->embarque_concluido,NULL);
 }
+void wait_for_car(station *s){
+    pthread_mutex_lock(&s->mutex); //protegendo a variavel para outra thread nao mudar
+    s->esperando++;
+    while (s->vagas_livres==0)//se nao tiver vgas deixa a thread dormindo 
+    {
+        pthread_cond_wait(&s->vagas_disponiveis,&s->mutex);//thread dorme e libera o mutex atualizar a variavel
+    }
+    s->esperando--;//deixa de ser esperando
+    s->vagas_livres--;
+    s->embarcando++;
+}
