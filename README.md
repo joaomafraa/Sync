@@ -1,2 +1,2 @@
 # Sync
-imolementacao 5 disciplina SO
+implementacao 5 disciplina SO

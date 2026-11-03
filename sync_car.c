@@ -36,3 +36,10 @@ void wait_for_car(station *s){
     s->vagas_livres--;
     s->embarcando++;
 }
+void station_on_board(station *s){
+    pthread_mutex_lock(&s->mutex);
+    s->embarcando--;//conclui o embarque diminui
+    if(s->embarcando==0){//ele foi o ultimo passageiro
+        pthread_cond_signal(&s->embarque_concluido);// avisa a thread do vagao 
+    }
+}
