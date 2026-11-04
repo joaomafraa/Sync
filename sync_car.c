@@ -4,6 +4,7 @@
 #include <time.h>
 #include <unistd.h>
 #include <pthread.h>
+#include "sync_car.h"
 
 typedef struct station {
     pthread_mutex_t mutex;
@@ -42,4 +43,20 @@ void station_on_board(station *s){
     if(s->embarcando==0){//ele foi o ultimo passageiro
         pthread_cond_signal(&s->embarque_concluido);// avisa a thread do vagao 
     }
+}
+
+void station_load_car(station *s,int count){
+    pthread_mutex_lock(&s->mutex);
+
+    s->vagas_livres = count;
+
+    pthread_cond_broadcast(&s->vagas_disponiveis);
+
+    while((s->vagas_livres > 0 && s->esperando > 0) || s->embarcando > 0){
+        pthread_cond_wait(&s->embarque_concluido,&s->mutex);
+    }
+
+    s->vagas_livres = 0;
+
+    pthread_mutex_unlock(&s->mutex);
 }
