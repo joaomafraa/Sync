@@ -6,7 +6,7 @@
 #include <pthread.h>
 #include "sync_car.h"
 
-void station_init(station *s){
+void station_init(struct station *s){
     s->esperando =0;
     s->vagas_livres=0;
     s->embarcando=0;
@@ -15,7 +15,7 @@ void station_init(station *s){
     pthread_cond_init(&s->vagas_disponiveis,NULL);
     pthread_cond_init(&s->embarque_concluido,NULL);
 }
-void station_wait_for_car(station *s){
+void station_wait_for_car(struct station *s){
     pthread_mutex_lock(&s->mutex); //protegendo a variavel para outra thread nao mudar
     s->esperando++;
     while (s->vagas_livres==0)//se nao tiver vgas deixa a thread dormindo 
@@ -27,7 +27,7 @@ void station_wait_for_car(station *s){
     s->embarcando++;
     pthread_mutex_unlock(&s->mutex);
 }
-void station_on_board(station *s){
+void station_on_board(struct station *s){
     pthread_mutex_lock(&s->mutex);
     s->embarcando--;//conclui o embarque diminui
     if(s->embarcando==0){//ele foi o ultimo passageiro
@@ -36,7 +36,7 @@ void station_on_board(station *s){
     pthread_mutex_unlock(&s->mutex);
 }
 
-void station_load_car(station *s,int count){
+void station_load_car(struct station *s,int count){
     pthread_mutex_lock(&s->mutex);
 
     s->vagas_livres = count;
