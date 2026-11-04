@@ -3,7 +3,7 @@
 
 #include <pthread.h>
 
-struct station {
+typedef struct station{
     pthread_mutex_t mutex;
 
     pthread_cond_t vagas_disponiveis;
@@ -12,14 +12,14 @@ struct station {
     int esperando;
     int vagas_livres;
     int embarcando;
-};
+}station;
 
-void station_init(struct station *station);
+void station_init(station *s);
 
-void station_wait_for_car(struct station *station);
+void station_wait_for_car(station *s);
 
-void station_on_board(struct station *station);
+void station_on_board(station *s);
 
-void station_load_car(struct station *station, int count);
+void station_load_car(station *s, int count);
 
 #endif

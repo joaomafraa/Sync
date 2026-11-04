@@ -10,3 +10,265 @@ Script started on 2026-11-01 16:49:49-03:00 [TERM="xterm-256color" TTY="/dev/pts
 exit
 
 Script done on 2026-11-01 17:08:12-03:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2026-11-04 14:11:02-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="149" LINES="16"]
+^[[A[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ script -a evidencias.logcode .[Kscript -a evidencias.log[Kscript -a evidencias.logcode .[K[3Ppwdwhoami[2Pdate
+[?2004lWed Nov  4 14:11:07 -03 2026
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ datescript -a evidencias.logcode .[K[3Ppwd
+[?2004l/mnt/c/SO/Sync
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ pwddatescript -a evidencias.logcode .[K[3Ppwdwhoami
+[?2004ljoao
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$  a[K[Kmake
+[?2004lgcc -Wall -Wextra -pthread sync_car.c sync_car-runner.c -o sync_car
+[01m[Ksync_car.c:9:16:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct station[m[K’
+    9 | typedef struct [01;31m[Kstation[m[K {
+      |                [01;31m[K^~~~~~~[m[K
+In file included from [01m[Ksync_car.c:7[m[K:
+[01m[Ksync_car.h:6:8:[m[K [01;36m[Knote: [m[Koriginally defined here
+    6 | struct [01;36m[Kstation[m[K {
+      |        [01;36m[K^~~~~~~[m[K
+[01m[Ksync_car.c:20:6:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Kstation_init[m[K’; have ‘[01m[Kvoid(station *)[m[K’
+   20 | void [01;31m[Kstation_init[m[K(station *s){
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[Ksync_car.h:17:6:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Kstation_init[m[K’ with type ‘[01m[Kvoid(struct station *)[m[K’
+   17 | void [01;36m[Kstation_init[m[K(struct station *station);
+      |      [01;36m[K^~~~~~~~~~~~[m[K
+[01m[Ksync_car.c:40:6:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Kstation_on_board[m[K’; have ‘[01m[Kvoid(station *)[m[K’
+   40 | void [01;31m[Kstation_on_board[m[K(station *s){
+      |      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[Ksync_car.h:21:6:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Kstation_on_board[m[K’ with type ‘[01m[Kvoid(struct station *)[m[K’
+   21 | void [01;36m[Kstation_on_board[m[K(struct station *station);
+      |      [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[Ksync_car.c:48:6:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Kstation_load_car[m[K’; have ‘[01m[Kvoid(station *, int)[m[K’
+   48 | void [01;31m[Kstation_load_car[m[K(station *s,int count){
+      |      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[Ksync_car.h:23:6:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Kstation_load_car[m[K’ with type ‘[01m[Kvoid(struct station *, int)[m[K’
+   23 | void [01;36m[Kstation_load_car[m[K(struct station *station, int count);
+      |      [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+make: *** [Makefile:5: sync_car] Error 1
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make
+[?2004lgcc -Wall -Wextra -pthread sync_car.c sync_car-runner.c -o sync_car
+In file included from [01m[Ksync_car.c:7[m[K:
+[01m[Ksync_car.h:17:19:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kstation[m[K’; did you mean ‘[01m[Kstdin[m[K’?
+   17 | void station_init([01;31m[Kstation[m[K *station);
+      |                   [01;31m[K^~~~~~~[m[K
+      |                   [32m[Kstdin[m[K
+[01m[Ksync_car.h:19:27:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kstation[m[K’; did you mean ‘[01m[Kstdin[m[K’?
+   19 | void station_wait_for_car([01;31m[Kstation[m[K *station);
+      |                           [01;31m[K^~~~~~~[m[K
+      |                           [32m[Kstdin[m[K
+[01m[Ksync_car.h:21:23:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kstation[m[K’; did you mean ‘[01m[Kstdin[m[K’?
+   21 | void station_on_board([01;31m[Kstation[m[K *station);
+      |                       [01;31m[K^~~~~~~[m[K
+      |                       [32m[Kstdin[m[K
+[01m[Ksync_car.h:23:23:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kstation[m[K’; did you mean ‘[01m[Kstdin[m[K’?
+   23 | void station_load_car([01;31m[Kstation[m[K *station, int count);
+      |                       [01;31m[K^~~~~~~[m[K
+      |                       [32m[Kstdin[m[K
+[01m[Ksync_car.c:9:16:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct station[m[K’
+    9 | typedef struct [01;31m[Kstation[m[K {
+      |                [01;31m[K^~~~~~~[m[K
+[01m[Ksync_car.h:6:8:[m[K [01;36m[Knote: [m[Koriginally defined here
+    6 | struct [01;36m[Kstation[m[K {
+      |        [01;36m[K^~~~~~~[m[K
+In file included from [01m[Ksync_car-runner.c:17[m[K:
+[01m[Ksync_car.h:17:19:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kstation[m[K’; did you mean ‘[01m[Kstdin[m[K’?
+   17 | void station_init([01;31m[Kstation[m[K *station);
+      |                   [01;31m[K^~~~~~~[m[K
+      |                   [32m[Kstdin[m[K
+[01m[Ksync_car.h:19:27:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kstation[m[K’; did you mean ‘[01m[Kstdin[m[K’?
+   19 | void station_wait_for_car([01;31m[Kstation[m[K *station);
+      |                           [01;31m[K^~~~~~~[m[K
+      |                           [32m[Kstdin[m[K
+[01m[Ksync_car.h:21:23:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kstation[m[K’; did you mean ‘[01m[Kstdin[m[K’?
+   21 | void station_on_board([01;31m[Kstation[m[K *station);
+      |                       [01;31m[K^~~~~~~[m[K
+      |                       [32m[Kstdin[m[K
+[01m[Ksync_car.h:23:23:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kstation[m[K’; did you mean ‘[01m[Kstdin[m[K’?
+   23 | void station_load_car([01;31m[Kstation[m[K *station, int count);
+      |                       [01;31m[K^~~~~~~[m[K
+      |                       [32m[Kstdin[m[K
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kpassenger_thread[m[K’:
+[01m[Ksync_car-runner.c:24:9:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kstation_wait_for_car[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   24 |         [01;35m[Kstation_wait_for_car[m[K(station);
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kload_car_thread[m[K’:
+[01m[Ksync_car-runner.c:39:9:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kstation_load_car[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   39 |         [01;35m[Kstation_load_car[m[K(ltargs->station, ltargs->free_seats);
+      |         [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Ksync_car-runner.c:69:9:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kstation_init[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   69 |         [01;35m[Kstation_init[m[K(&station);
+      |         [01;35m[K^~~~~~~~~~~~[m[K
+[01m[Ksync_car-runner.c:131:33:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kstation_on_board[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  131 |                                 [01;35m[Kstation_on_board[m[K(&station);
+      |                                 [01;35m[K^~~~~~~~~~~~~~~~[m[K
+make: *** [Makefile:5: sync_car] Error 1
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make
+[?2004lgcc -Wall -Wextra -pthread sync_car.c sync_car-runner.c -o sync_car
+In file included from [01m[Ksync_car.c:7[m[K:
+[01m[Ksync_car.h:17:19:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kstation[m[K’; did you mean ‘[01m[Kstdin[m[K’?
+   17 | void station_init([01;31m[Kstation[m[K *s);
+      |                   [01;31m[K^~~~~~~[m[K
+      |                   [32m[Kstdin[m[K
+[01m[Ksync_car.h:19:27:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kstation[m[K’; did you mean ‘[01m[Kstdin[m[K’?
+   19 | void station_wait_for_car([01;31m[Kstation[m[K *s);
+      |                           [01;31m[K^~~~~~~[m[K
+      |                           [32m[Kstdin[m[K
+[01m[Ksync_car.h:21:23:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kstation[m[K’; did you mean ‘[01m[Kstdin[m[K’?
+   21 | void station_on_board([01;31m[Kstation[m[K *s);
+      |                       [01;31m[K^~~~~~~[m[K
+      |                       [32m[Kstdin[m[K
+[01m[Ksync_car.h:23:23:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kstation[m[K’; did you mean ‘[01m[Kstdin[m[K’?
+   23 | void station_load_car([01;31m[Kstation[m[K *s, int count);
+      |                       [01;31m[K^~~~~~~[m[K
+      |                       [32m[Kstdin[m[K
+[01m[Ksync_car.c:9:16:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct station[m[K’
+    9 | typedef struct [01;31m[Kstation[m[K {
+      |                [01;31m[K^~~~~~~[m[K
+[01m[Ksync_car.h:6:8:[m[K [01;36m[Knote: [m[Koriginally defined here
+    6 | struct [01;36m[Kstation[m[K {
+      |        [01;36m[K^~~~~~~[m[K
+In file included from [01m[Ksync_car-runner.c:17[m[K:
+[01m[Ksync_car.h:17:19:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kstation[m[K’; did you mean ‘[01m[Kstdin[m[K’?
+   17 | void station_init([01;31m[Kstation[m[K *s);
+      |                   [01;31m[K^~~~~~~[m[K
+      |                   [32m[Kstdin[m[K
+[01m[Ksync_car.h:19:27:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kstation[m[K’; did you mean ‘[01m[Kstdin[m[K’?
+   19 | void station_wait_for_car([01;31m[Kstation[m[K *s);
+      |                           [01;31m[K^~~~~~~[m[K
+      |                           [32m[Kstdin[m[K
+[01m[Ksync_car.h:21:23:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kstation[m[K’; did you mean ‘[01m[Kstdin[m[K’?
+   21 | void station_on_board([01;31m[Kstation[m[K *s);
+      |                       [01;31m[K^~~~~~~[m[K
+      |                       [32m[Kstdin[m[K
+[01m[Ksync_car.h:23:23:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Kstation[m[K’; did you mean ‘[01m[Kstdin[m[K’?
+   23 | void station_load_car([01;31m[Kstation[m[K *s, int count);
+      |                       [01;31m[K^~~~~~~[m[K
+      |                       [32m[Kstdin[m[K
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kpassenger_thread[m[K’:
+[01m[Ksync_car-runner.c:24:9:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kstation_wait_for_car[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   24 |         [01;35m[Kstation_wait_for_car[m[K(station);
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kload_car_thread[m[K’:
+[01m[Ksync_car-runner.c:39:9:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kstation_load_car[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   39 |         [01;35m[Kstation_load_car[m[K(ltargs->station, ltargs->free_seats);
+      |         [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Ksync_car-runner.c:69:9:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kstation_init[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   69 |         [01;35m[Kstation_init[m[K(&station);
+      |         [01;35m[K^~~~~~~~~~~~[m[K
+[01m[Ksync_car-runner.c:131:33:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kstation_on_board[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  131 |                                 [01;35m[Kstation_on_board[m[K(&station);
+      |                                 [01;35m[K^~~~~~~~~~~~~~~~[m[K
+make: *** [Makefile:5: sync_car] Error 1
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make
+[?2004lgcc -Wall -Wextra -pthread sync_car.c sync_car-runner.c -o sync_car
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+/usr/bin/ld: /tmp/ccHlJXvZ.o: in function `passenger_thread':
+sync_car-runner.c:(.text+0x20): undefined reference to `station_wait_for_car'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:5: sync_car] Error 1
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make
+[?2004lmake: 'sync_car' is up to date.
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make clean
+[?2004lrm -f sync_car
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ ma[K[Kmake
+[?2004lgcc -Wall -Wextra -pthread sync_car.c sync_car-runner.c -o sync_car
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make clean[Kwhoami[3Ppwddatescript -a evidencias.logcode .[Kscript -a evidencias.logcode .[K[3Ppwdwhoami[2Pdatemake -C pintos/src/threads && make -C pintos/src/threads/build   tests/threads/alarm-single.result   tests/threads/alarm-multiple.result   tests/threads/alarm-simultaneous.result   tests/threads/alarm-zero.result   tests/threads/alarm-negative.result[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwhoami[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Ppwdwhoamimake -C pintos/src/threads && make -C pintos/src/threads/build   tests/threads/alarm-single.result   tests/threads/alarm-multiple.result   tests/threads/alarm-simultaneous.result   tests/threads/alarm-zero.result   tests/threads/alarm-negative.result[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdate[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwhoami[3Ppwdcode .script -a evidencias.logdate[K[1Ppwdwhoami[2Pmake clean[K[Kmake clean[Kwhoami[3Ppwddatescript -a evidencias.logcode .[K[3Ppwdwhoami[2Pdatemake -C pintos/src/threads && make -C pintos/src/threads/build   tests/threads/alarm-single.result   tests/threads/alarm-multiple.result   tests/threads/alarm-simultaneous.result   tests/threads/alarm-zero.result   tests/threads/alarm-negative.result[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwhoami[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Ppwddatescript -a evidencias.logmake -C pintos/src/threads/build   tests/threads/alarm-single.result   tests/threads/alarm-multiple.result   tests/threads/alarm-simultaneous.result   tests/threads/alarm-zero.result   tests/threads/alarm-negative.result[A[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Psource env.shcd /mnt/c/SO/Pint_Os[7Psource env.shcd /mnt/c/SO/Pint_Ossed -n '/^timer_sleep (/,/^}/p' pintos/src/devices/timer.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat pintos/src/threads/build/tests/threads/alarm-single.result[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake -C pintos/src/threads/build tests/threads/alarm-single.result[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csource env.sh[Kcd /mnt/c/SO/Pint_Osmake -C pintos/src/threads[4Pi386-elf-gcc --version[4Pwhich i386-elf-gcc[5Psource env.shcd /mnt/c/SO/Pint_Ospwd[Kwhoami[2Pdatecode .d Pint_Os[4Pode .getconf -a | grep -i cache[11Plscpu --caches [3P./cperf mem[Cgetconf -a | grep -i cache[11Plscpu --caches [3P./cperf mem[Clscpu | grep -i mhz[Kvlscpulscpu | grep -i mhz[2P./meu-cperf calib[1Pfreq[4P[C[C[C[C[C[C[C[C[C[C[1Pmeu-cperfcd /mnt/c/Users/jcmaf/OneDrive/Documents/cperf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./meu-cperf[Kgcc -O2 -fno-tree-vectorize -fno-unroll-loops -o meu-cperf meu-cperf.c -lm[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[37Psudo apt install gcc-mingw-w64-x86-64[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMake[Kmakecd src/[3Pmakesudo apt install gcc-mingw-w64-x86-64[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccode .[Ksudo apt install gcc-mingw-w64-x86-64[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc[Kls linux/l[Kscd ..[1PmakeMakefilels[Kmake[2Plsgcc -O2 -fno-tree-vectorize -fno-unroll-loops -o meu-cperf meu-cperf.c -lm[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd src/[Kp cperf.c meu-cperf.cgcc -O2 -fno-tree-vectorize -fno-unroll-loops -o meu-cperf meu-cperf.c -lm[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..[K[3Pls./cperf freqall 70309784476freq[Kcp cperf.c meu-cperf.c./meu-cperf 70309784476[5Pcd src && make winsudo apt install -y gcc-mingw-w64-x86-64[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./medir.sh                     # bateria completa -> linux/resultados/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[41Pcd src && make && cd ../linuxsudo apt install -y build-essential linux-tools-common linux-tools-generic time[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cupdate[K[7Pcd cperf^C[?2004l[?2004h[?2004l
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [7m./sync_car[27m./sync_car
+[?2004lcar entering station with 18 free seats
+car departed station with 18 new passenger(s) (expected 18)
+car entering station with 7 free seats
+car departed station with 7 new passenger(s) (expected 7)
+car entering station with 12 free seats
+car departed station with 12 new passenger(s) (expected 12)
+car entering station with 46 free seats
+car departed station with 46 new passenger(s) (expected 46)
+car entering station with 21 free seats
+car departed station with 17 new passenger(s) (expected 17)
+Looks good!
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make clean
+[?2004lrm -f sync_car
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make[Ke
+[?2004lgcc -Wall -Wextra -pthread sync_car.c sync_car-runner.c -o sync_car
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ [K]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make clean
+[?2004lrm -f sync_car
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make
+[?2004lgcc -Wall -Wextra -pthread sync_car.c sync_car-runner.c -o sync_car
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make clean[K clean./sync_car[6Pmake./sync_car
+[?2004lcar entering station with 8 free seats
+car departed station with 8 new passenger(s) (expected 8)
+car entering station with 0 free seats
+car departed station with 0 new passenger(s) (expected 0)
+car entering station with 16 free seats
+car departed station with 16 new passenger(s) (expected 16)
+car entering station with 40 free seats
+car departed station with 40 new passenger(s) (expected 40)
+car entering station with 11 free seats
+car departed station with 11 new passenger(s) (expected 11)
+car entering station with 48 free seats
+car departed station with 25 new passenger(s) (expected 25)
+Looks good!
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make clean
+[?2004lrm -f sync_car
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make test
+[?2004lmake: *** No rule to make target 'test'.  Stop.
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make
+[?2004lgcc -Wall -Wextra -pthread sync_car.c sync_car-runner.c -o sync_car
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+m[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make test
+[?2004lmake: *** No rule to make target 'test'.  Stop.
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ n[Kmake cel[K[Kla[Kean
+[?2004lrm -f sync_car
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make
+[?2004lmake: 'sync_car' is up to date.
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make clean
+[?2004lrm -f sync_car
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ male
+[?2004lCommand 'male' not found, did you mean:
+  command 'mle' from snap mle-editor (1.8.1)
+  command 'vale' from snap vale (3.25.1)
+  command 'mame' from snap mame (mame0289)
+  command 'kale' from snap kale (v0.8.0)
+  command 'mace' from snap mace (0.2.0)
+  command 'make' from deb make (4.3-4.1build1)
+  command 'make' from deb make-guile (4.3-4.1build1)
+  command 'mle' from deb mle (1.7.2-1)
+  command 'ale' from deb ale (0.9.0.3-5)
+  command 'mame' from deb mame (0.261+dfsg.1-1)
+See 'snap info <snapname>' for additional versions.
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ make
+[?2004lgcc -Wall -Wextra -pthread sync_car.c sync_car-runner.c -o sync_car
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+[?2004h]0;joao@LaptopJoaoM: /mnt/c/SO/Sync[01;32mjoao@LaptopJoaoM[00m:[01;34m/mnt/c/SO/Sync[00m$ mak[K[K[Kmakeleke clean[K clean[1Ptest[K testclean./sync_car[6Pmake./sync_car
+[?2004lcar entering station with 49 free seats
+car departed
